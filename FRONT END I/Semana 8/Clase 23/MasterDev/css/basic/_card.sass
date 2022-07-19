@@ -1,0 +1,23 @@
+@import "../variables/_variables"
+
+.card
+    background-color: $bg-secondary
+    button
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        margin-left: 2%
+        box-shadow: -5px 0px $shadow
+        background-color: white
+        p
+            margin: 10px
+    .descripcion
+        padding: 4%
+        .titulo
+            p
+                font-weight: bold
+
+.middle
+    @extend .card
+    margin: 0 2vw 0 2vw

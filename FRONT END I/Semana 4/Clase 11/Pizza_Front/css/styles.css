@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado nav .menu-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.encabezado .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.encabezado nav .menu-top li{
+    margin: 0px 5px;
+}
+
+.encabezado .logo img{
+    margin: 0px 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3% 2%;
+}
+
+main .banner-imagen{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+main .banner-imagen #delivery-texto{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 35vw;
+}
+
+main .banner-imagen #delivery{
+    flex-grow: 1;
+    width: 50vw;
+}
+
+main .podio{
+    flex-grow: 1;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+main .podio .titulo{
+    margin: -10% 0% 10% 0%;
+    color: #FC200C;
+    font-size: 1.5rem;
+} 
+
+main .podio .descripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-de-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-de-pagina nav .menu-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pie-de-pagina .logo2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pie-de-pagina nav .menu-bottom li{
+    margin: 5px 0px;
+}
+
+.pie-de-pagina .logo2 img{
+    margin: 0px 10px;
+}
+
+header{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.descripcion .pizzas-top{
+    width: 25vw;
+    margin-left: 10%;
+}
+
+.descripcion .imagen-pizzas-top{
+    width: 25vw;
+    margin-left: 30%;
+}
+
+.pizzas-top span{
+    font-size: 1.25rem;
+}
+
+.pizzas-top ol li{
+    font-size: 1rem;
+    margin: 5% 0%;
+}

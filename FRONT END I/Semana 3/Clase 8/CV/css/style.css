@@ -1,0 +1,86 @@
+header{
+      padding: 0px;
+      background-image: url(../img/bolson_cerrado.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+}
+
+nav{
+      text-align: left;
+      font-size: x-large;
+}
+h1{
+      color: #005677;
+      text-align: center;
+      text-transform: uppercase; 
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      background-color: #C4C4C4;
+      position: relative;
+      top: 0%;
+}
+
+h2{
+      color: #005677;
+      background-color: #C4C4C4;
+      text-transform: uppercase; 
+      font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#encabezado img{
+      width: 100px;
+      height: 146.37px;
+}
+
+.images-general{
+      text-align: center;
+}
+
+.images-general #encabezado img{
+      margin-top: 10px;
+}
+
+.bloque ul{
+      display: inline-block;
+      padding-left: inherit;
+      vertical-align: top;
+}
+
+.bloque-entero ul{
+      margin-left: 0;
+      margin-bottom: 3px;
+}
+
+.negrita{
+      font-weight: bold;
+      display: inline-block;
+      padding-left: inherit;
+      vertical-align: top;
+      font-family: 'Abril Fatface', cursive;
+}
+
+footer .images-footer{
+      text-align: center;
+      background-color: #005677;;
+      color: white;
+}
+
+.elemento{
+      display: inline-block;
+      padding-left: 10px;
+}
+
+.menu a{
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #005677;
+}
+
+.bloque-entero li{
+      font-family: 'Alfa Slab One', cursive;
+}
+
+.descripcion{
+      font-family: 'Alfa Slab One', cursive; 
+}

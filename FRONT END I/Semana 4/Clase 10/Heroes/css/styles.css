@@ -1,0 +1,98 @@
+.heroes{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.heroes article .fondo{
+    top: 0;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.heroes article .heroe{
+    position: absolute;
+    top: 430px;
+    z-index: 1;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.heroes article .meGusta{
+    position: relative;
+    top: -219px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.heroes article{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+    width: 380px;
+    height: 336px;
+    padding: 10px;
+}
+.heroes article .specs{
+    position: relative;
+    top: -37px;
+    background-color: #F3F3F3;
+    padding-bottom: 300px;
+    padding-top: 50px;
+}
+
+.heroes article .descripcion{
+    position: absolute;
+    top: 60px;
+}
+
+.heroes article .specs button{
+    position: absolute;
+    bottom: 0px;
+    left: 130px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    background-color: #00669F;
+    border-style: none;
+    color: #F3F3F3;
+}
+
+
+footer .derechos{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: -370px;
+    background-color: #00669F;
+    max-height: 51px;
+    color: #FFF9F9;
+}
+
+body .pagina{
+    margin-top: 120px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header .descuentos{
+    display: flex;
+    align-items: center;
+    background-color: #1CD1B0;
+    max-height: 38px;
+    margin-bottom: 0px;
+}
+
+header .titulo{
+    display: flex;
+    align-items: center;
+    background-color: #00669F;
+    max-height: 101px;
+    margin-top: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}

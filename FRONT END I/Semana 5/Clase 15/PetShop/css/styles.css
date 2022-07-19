@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 0% 0.5% 0%;
+}
+
+.menu{
+    background-color: #F0A83E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0% 1% 0%;
+}
+
+.sociales{
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociales .contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 0.2;
+    margin-left: 1%;
+}
+
+.sociales .contacto li{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+}
+
+.sociales .contacto li .lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 3%;
+}
+
+.sociales .logo2{
+    flex-grow: 0.2;
+}
+
+footer p{
+    text-align: center;
+}
+
+.sociales .principal{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.sociales .secundario{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #8A8787;
+}
+
+.fa-location-dot, .fa-phone-volume, .fa-envelope {
+    color: #FFFFFF;
+    font-size: 40px;
+    width: 40px;
+  }
+
+footer{
+      background-color: #222222;
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+  }
+
+  .productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .productos section{
+    margin: 0% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBFAF6;
+    min-width: 262px;
+  }
+
+.productos .precio{
+    color: #F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0%;
+    margin: 0%;
+  }
+
+.productos section h2{
+    color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.productos-destacados{
+    color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.productos-destacados h1{
+    padding: 0%;
+    margin: 0%;
+}
+
+.productos-destacados img{
+    padding: 0%;
+    margin: 0%;
+}
+
+.menu-productos{
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+}
+
+.menu-productos a{
+    text-decoration: none;
+    justify-content: center;
+    margin: 0% 5%;
+}
+
+.banner-texto{
+    position: absolute;
+    top: 40%;
+    right: 2%;
+}
+
+.banner{
+    width: 100vw;
+    min-height: 70vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner button{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F0A83E;
+    border-radius: 5px;
+    border-style: none;
+    padding: 4%;
+}
+
+#banner-bienvenida{
+    font-size: 30px;
+    padding: 0%;
+    margin: 0% 0% 2% 0%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#banner-descuento{
+    font-size: 16px;
+    padding: 0%;
+    margin: 0% 0% 2% 0%;
+}
+
+.menu-list a{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-paw{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.language{
+    color: #F3F3F3;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0% 10%;
+}
+
+.currency{
+    color: #F3F3F3;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.options p{
+    margin-left: 5%;
+    align-items: center;
+}
+
+.options .menu-options{
+    margin-right: 5%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu img{
+    margin-left: 2%;
+}
+
+.menu-list li{
+    margin: 0% 1%;
+}
+
+.menu-list{
+    margin-right: 5%;
+}
+
+@media (max-width: 768px){
+    .banner-texto{
+        position: static;
+    }
+    .productos{
+        flex-wrap: wrap;
+    }
+    .productos section{
+        margin-top: 40px;
+    }
+    .menu-list ul{
+        flex-direction: column;
+    }
+    .productos-destacados{
+        text-align: center;
+    }
+    .options{
+        display: none;
+    }
+    .sociales{
+        flex-direction: column-reverse;
+    }
+}

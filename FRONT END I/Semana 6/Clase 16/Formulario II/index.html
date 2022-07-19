@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario II</title>
+</head>
+
+<body>
+    <header>
+        <div class="descuentos">
+            <h3>20% de descuento en todos los productos!</h3>
+        </div>
+        <div class="logo">
+            <img src="img/Logo.png" alt="logo">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav class="menu-list">
+            <ul style="list-style-type: none">
+                <li><a href="">Contactos</a></li>
+                <li><a href="">Registrarme</a></li>
+                <li><a href="">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <h1>Añadí tu super!</h1>
+            <p>Agrega tu personaje favorito completando las opciones</p>
+            <form action="">
+                <div class="campos">
+                    <div class="renglon">
+                        <label class="nombre-campo primero" for="nombre">*Nombre
+                            <input type="text" id="nombre" name="nombre" required>
+                        </label>
+                        <label class="nombre-campo primero derecha" for="especie">*Especie
+                            <select name="especie" id="especie" required>
+                                <option value="" disabled selected hidden>Especie</option>
+                                <option value="Unknown">Unknown</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="renglon">
+                        <label class="nombre-campo segundo" for="fecha">Fecha
+                            <input type="date" id="fecha" name="fecha" placeholder="dd-mm-aaaa">
+                        </label>
+                        <label class="nombre-campo segundo derecha" for="foto">Agregar foto
+                            <input type="file" id="foto" name="foto" placeholder="Seleccionar archivo"
+                                accept=".jpg,.png, .pdf">
+                        </label>
+                    </div>
+                    <div class="descripcion">
+                        <textarea name="descripcion">Descripción</textarea>
+                        <div class="seleccion derecha">
+                            <div class="poderes">
+                                <p>Poderes</p>
+                                <label for="poder1"><input type="checkbox" id="poder1" name="poderes" value="Volar">
+                                    Volar</label>
+                                <label for="poder2"><input type="checkbox" id="poder2" name="poderes"
+                                        value="Superinteligencia">
+                                    Superinteligencia</label>
+                                <label for="poder3"><input type="checkbox" id="poder3" name="poderes"
+                                        value="Vista-de-rayo-laser">
+                                    Vista de rayo laser</label>
+                                <label for="poder4"><input type="checkbox" id="poder4" name="poderes"
+                                        value="Billetera-gorda">
+                                    Billetera gorda</label>
+                            </div>
+                            <br>
+                            <div class="tipo">
+                                <p>Tipo de personaje</p>
+                                <label for="tipo1"><input type="radio" id="tipo1" name="tipo" value="Heroe-Heroina">
+                                    Héroe / Heroina</label>
+                                <label for="tipo2"><input type="radio" id="tipo2" name="tipo" value="Villano-Villana">
+                                    Villano / Villana</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Añadir">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="derechos">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </div>
+    </footer>
+</body>
+
+</html>

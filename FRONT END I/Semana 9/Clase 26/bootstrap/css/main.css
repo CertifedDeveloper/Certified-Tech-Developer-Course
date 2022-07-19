@@ -1,0 +1,30 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar-custom {
+  background-color: #006064;
+}
+
+main .presentacion img {
+  max-width: 20vw;
+  height: auto;
+}
+main .presentacion p {
+  margin: 0;
+  padding: 0;
+}
+main .portfolio img {
+  max-width: 20vw;
+  height: auto;
+}
+main .portfolio p {
+  margin: 0;
+  padding: 0;
+}
+main .portfolio .logos .imagen img {
+  max-width: 1vw;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */

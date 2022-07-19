@@ -1,0 +1,137 @@
+.options{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.menu{
+    background-color: #F0A83E;
+}
+
+.sociales{
+    background-color: #3C2313;
+}
+
+footer p{
+    text-align: center;
+}
+
+.sociales .principal{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.sociales .secundario{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #8A8787;
+}
+
+.fa-location-dot, .fa-phone-volume, .fa-envelope {
+    color: #FFFFFF;
+    font-size: 45px;
+  }
+
+footer{
+      background-color: #222222;
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+  }
+
+.productos .precio{
+    color: #F0A83E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+.productos .h2{
+    color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.produtos-destacados{
+    color: #3C2313;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.menu-productos{
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu-productos a{
+    text-decoration: none;
+}
+
+.banner{
+    width: 1025px;
+    height: 409px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    box-sizing: border-box;
+    text-align: center;
+}
+.banner button{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F0A83E;
+    border-radius: 5px;
+}
+
+#banner-bienvenida{
+    font-size: 30px;
+}
+
+#banner-descuento{
+    font-size: 16px;
+}
+
+.menu-list a{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.fa-paw{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.language{
+    color: #F3F3F3;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.currency{
+    color: #F3F3F3;
+    background-color: #222222;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+}

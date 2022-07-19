@@ -1,0 +1,112 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo h3 {
+  font-weight: bold;
+}
+header .barra ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+header .barra ul li {
+  margin-left: 5vw;
+}
+header .barra ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+}
+.banner .parrafo p {
+  color: #8b8b8b;
+}
+.banner .imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .imagen img {
+  width: 50vw;
+  height: 50vw;
+}
+
+.cards {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner button {
+  padding: 4% 6%;
+  border-radius: 5px;
+  border-style: dotted;
+  background-color: #03faee;
+}
+
+.card, .middle {
+  background-color: #f8f8f8;
+}
+.card button, .middle button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 2%;
+  box-shadow: -5px 0px #92f7f2;
+  background-color: white;
+}
+.card button p, .middle button p {
+  margin: 10px;
+}
+.card .descripcion, .middle .descripcion {
+  padding: 4%;
+}
+.card .descripcion .titulo p, .middle .descripcion .titulo p {
+  font-weight: bold;
+}
+
+.middle {
+  margin: 0 2vw 0 2vw;
+}
+
+.sociales {
+  display: flex;
+}
+.sociales button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1vw;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: -5px 0px #92f7f2;
+  background-color: white;
+}
+.sociales button img {
+  min-width: 15px;
+  min-height: 15px;
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
