@@ -1,0 +1,112 @@
+// Ejercicio 1
+console.log("Ejercicio 1")
+let paises = [
+    {
+      nombre: "Argentina",
+      continente: "Sudamérica",
+      poblacion: 40000000
+    },
+  {
+      nombre: "Colombia",
+      continente: "Sudamérica",
+      poblacion: 50372000
+    },
+ 
+    {
+      nombre: "Brasil",
+      continente: "Sudamérica",
+      poblacion: 300000000
+    },
+    {
+      nombre: "Etiopía",
+      continente: "África",
+      poblacion: 15000000
+    },
+    {
+      nombre: "Chile",
+      continente: "Sudamérica",
+      poblacion: 10000000
+    }
+  ];
+
+const paisesContinene = (array, continente, numeroPoblacion) => {
+    let nuevoArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].continente === continente && array[i].poblacion >= numeroPoblacion){
+            nuevoArray.push(array[i])
+        }
+        
+    }
+    return nuevoArray
+}
+let arrayPaises = paisesContinene(paises, "Sudamérica", 10000000)
+console.log(arrayPaises)
+
+
+// Ejercicio 2
+console.log("========================")
+console.log("Ejercicio 2")
+let arrayDeNumeros = [1,2,3, 8, 9, 104, 5, 6, 7, 15];
+const bubbleSort = (array, tipo) => {
+    let aux
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length - 1; j++) {
+            if (tipo === "ASC"){
+                if(array[j] > array[j + 1]){
+                    aux = array[j]
+                    array[j] = array[j + 1]
+                    array[j + 1] = aux
+            
+                }
+            } else if (tipo === "DESC"){
+                if(array[j] < array[j + 1]){
+                    aux = array[j]
+                    array[j] = array[j + 1]
+                    array[j + 1] = aux
+                }
+            } 
+        }
+        
+    }
+}
+console.log(arrayDeNumeros)
+bubbleSort(arrayDeNumeros, "ASC")
+console.log(arrayDeNumeros)
+
+
+// Ejercicio 3
+console.log("========================")
+console.log("Ejercicio 3")
+let matriz = [
+    [5, 2, 2], // 0
+    [2, 5, 2], // 1
+    [4, 4, 5]  // 2
+];
+
+console.log("Parte A")
+const sumaFila = mat => {
+    let acc = 0
+    for (let i = 0; i < mat[0].length; i++) {
+        acc += mat[0][i]
+    }
+    return acc
+}
+let sumaPrimeraFila = sumaFila(matriz)
+console.log(sumaPrimeraFila)
+
+console.log("========================")
+console.log("Parte B")
+const esPar = mat => {
+    let nuevoArray = []
+    for (let i = 0; i < mat.length; i++) {
+        for (let j = 0; j < mat[i].length; j++) {
+            if (mat[i][j] % 2 === 0){
+                nuevoArray.push(mat[i][j])
+            }
+        }
+        
+    }
+    return nuevoArray
+}
+let numerosPares = esPar(matriz)
+console.log(numerosPares)

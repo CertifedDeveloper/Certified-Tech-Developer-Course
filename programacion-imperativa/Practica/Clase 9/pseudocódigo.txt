@@ -1,0 +1,7 @@
+input = ("Ingrese un número: )
+funcion calcularPorcentaje(numero){
+    retornar numero * 0.18
+}
+si input > 500{
+    imprimir calcularPorcentaje(input)
+}

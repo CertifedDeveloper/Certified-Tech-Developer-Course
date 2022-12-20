@@ -1,0 +1,83 @@
+// Parcial Programacion Imperativa Arturo Hernández
+
+// Ejercicio 1
+
+console.log("Ejercicio 1")
+
+const restarPares = (a, b) => {
+    if (a % 2 === 0 && b % 2 === 0){
+        return a - b
+    } else{
+        return "Lo siento, uno de los parámetros no es par"
+    }
+}
+let restarNumerosPares = restarPares(2, 2)
+console.log(restarNumerosPares)
+
+// Ejercicio 2
+
+console.log("=========================")
+console.log("Ejercicio 2")
+
+const accesoRecital = (edad, ticket) => {
+    if (ticket === true && edad >= 18){
+        return true
+    } else if (ticket === true && edad < 18){
+        return "Sólo puedes acceder con un adulto acompañante"
+    } else {
+        return false
+    }
+}
+let puedeEntrar = accesoRecital(18, true)
+console.log(puedeEntrar)
+
+// Ejercicio 3
+
+console.log("=========================")
+console.log("Ejercicio 3")
+
+
+let productos = [
+    {
+        producto : "remera",
+        tipo: "indumentaria",
+        precio: 2100
+    },
+    {
+        producto : "notebook",
+        tipo: "tecnologia",
+        precio: 200000
+    },
+    {
+        producto : "celular",
+        tipo: "tecnologia",
+        precio: 27000
+    },
+    {
+        producto : "protector solar",
+        tipo: "cosmetica",
+        precio: 2500
+    },
+    {
+        producto : "pantalon",
+        tipo: "indumentaria",
+        precio: 7500
+    },
+    {
+        producto : "tablet",
+        tipo: "tecnologia",
+        precio: 60000
+    },
+   
+]
+const filtro = array => {
+    let nuevoArray = []
+    for (let i = 0; i < array.length; i++){
+        if (array[i].tipo === "tecnologia" && array[i].precio >= 50000){
+            nuevoArray.push(array[i])
+        }
+    }
+    return nuevoArray
+}
+let nuevoArray = filtro(productos)
+console.log(nuevoArray)

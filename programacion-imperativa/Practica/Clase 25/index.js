@@ -1,0 +1,5 @@
+document.querySelector("h1").style.color = "lime"
+document.querySelector("h2").textContent = "Bienvenidos a mi página web"
+document.querySelector(".parrafo1").textContent = "Documento"
+document.querySelector(".parrafo2").innerHTML = "Documento2"
+document.querySelector("section").innerHTML = "<p>Hola</p><p>Hola</p><p>Hola</p>"
