@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ejercitacion_string_integer.iml" filepath="$PROJECT_DIR$/ejercitacion_string_integer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funciones/funciones.iml" filepath="$PROJECT_DIR$/funciones/funciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ingreso_de_datos/ingreso_de_datos.iml" filepath="$PROJECT_DIR$/ingreso_de_datos/ingreso_de_datos.iml" />
+    </modules>
+  </component>
+</project>
