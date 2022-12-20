@@ -1,0 +1,178 @@
+{
+	"id": "5d75f78c-4077-48dd-8204-b2b5adbd3537",
+	"name": "Clase 20",
+	"timestamp": "2022-11-30T13:11:24.189Z",
+	"collection_id": "0-bf1791e2-9fb4-46b8-9465-6cb237fd3625",
+	"folder_id": 0,
+	"environment_id": "5219dd13-d027-4c11-99df-97d00ad6823f",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9e1da540-3a65-41e5-81d3-02df4b1e5f97",
+			"name": "Crear producto",
+			"url": "https://ctd-api-resto.herokuapp.com/v1/products",
+			"time": 169,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "9b08a433-315b-473e-b627-3111ca7f8017",
+			"name": "Cambiar Estado Pedido",
+			"url": "https://ctd-api-resto.herokuapp.com/v1/orders/221",
+			"time": 160,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Estado Entregado": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Estado Entregado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Estado Entregado": true
+				}
+			]
+		},
+		{
+			"id": "1572ba05-ae28-4877-8ed0-2bc91b8ddad0",
+			"name": "Eliminar pedido",
+			"url": "https://ctd-api-resto.herokuapp.com/v1/orders/184",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Eliminar pedido": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Eliminar pedido": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Eliminar pedido": true
+				}
+			]
+		},
+		{
+			"id": "f9454b86-3c23-45ff-81ea-e22970352043",
+			"name": "Obtener pedido",
+			"url": "https://ctd-api-resto.herokuapp.com/v1/orders",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Obtener id de pedido": true,
+				"Obtener id de usuario de pedido": true,
+				"Obtener estado pedido": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Obtener id de pedido": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Obtener id de usuario de pedido": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Obtener estado pedido": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Obtener id de pedido": true,
+					"Obtener id de usuario de pedido": true,
+					"Obtener estado pedido": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 708,
+	"collection": {
+		"requests": [
+			{
+				"id": "9e1da540-3a65-41e5-81d3-02df4b1e5f97",
+				"method": "POST"
+			},
+			{
+				"id": "9b08a433-315b-473e-b627-3111ca7f8017",
+				"method": "PUT"
+			},
+			{
+				"id": "1572ba05-ae28-4877-8ed0-2bc91b8ddad0",
+				"method": "DELETE"
+			},
+			{
+				"id": "f9454b86-3c23-45ff-81ea-e22970352043",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "bf1791e2-9fb4-46b8-9465-6cb237fd3625",
+		"name": "Clase 20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear producto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status code is 200', function(){\r",
+							"    pm.response.to.have.status(201)\r",
+							"})\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"PapasF\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluRCIsImlkIjoxNTUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY2OTY4MDI3Mn0.BgZnX1wwC_IZAx9g18eE_E5erd0c4V-hi0ZU9Xk1M3U",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"PapasF\",\r\n\"photo\": \"https://www.healthifyme.com/blog/wp-content/uploads/2022/07/shutterstock_1927479248-1.jpg\",\r\n\"price\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ctd-api-resto.herokuapp.com/v1/products",
+					"protocol": "https",
+					"host": [
+						"ctd-api-resto",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cambiar Estado Pedido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status code is 200', function(){\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(\"Estado Entregado\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(\"delivered\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluRCIsImlkIjoxNTUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY2OTgxMjE2NH0.WZ3j1IhkeqzIEig--bPNFLGJ9mURCUAbCYfu4YT12UA",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"delivered\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ctd-api-resto.herokuapp.com/v1/orders/221",
+					"protocol": "https",
+					"host": [
+						"ctd-api-resto",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"221"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar pedido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status code is 200', function(){\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(\"Eliminar pedido\", function(){\r",
+							"    pm.expect(pm.response.json()).to.eql(\"Orden eliminada satisfactoriamente\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluRCIsImlkIjoxNTUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY2OTgxMjE2NH0.WZ3j1IhkeqzIEig--bPNFLGJ9mURCUAbCYfu4YT12UA",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ctd-api-resto.herokuapp.com/v1/orders/184",
+					"protocol": "https",
+					"host": [
+						"ctd-api-resto",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"orders",
+						"184"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener pedido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Status code is 200', function(){\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(\"Obtener id de pedido\", function(){\r",
+							"    const jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData[0].id).to.eql(73)\r",
+							"})\r",
+							"pm.test(\"Obtener id de usuario de pedido\", function(){\r",
+							"    const jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData[0].userId).to.eql(125)\r",
+							"})\r",
+							"pm.test(\"Obtener estado pedido\", function(){\r",
+							"    const jsonData = pm.response.json()\r",
+							"    pm.expect(jsonData[0].status).to.eql(\"confirmed\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluRCIsImlkIjoxNTUsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY2OTgxMjE2NH0.WZ3j1IhkeqzIEig--bPNFLGJ9mURCUAbCYfu4YT12UA",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ctd-api-resto.herokuapp.com/v1/orders",
+					"protocol": "https",
+					"host": [
+						"ctd-api-resto",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "ead728a0-a950-44ae-86e5-ae5f8f82fcd8",
+		"name": "Final Testing I",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Juan\",\r\n    \"lastName\": \"Perez\",\r\n    \"password\": \"123456\",\r\n    \"email\": \"clienteB@correo.com\",\r\n    \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api-resto.ctd.academy:3000/v1/users",
+					"protocol": "http",
+					"host": [
+						"api-resto",
+						"ctd",
+						"academy"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/chaarmaander ",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"chaarmaander "
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
