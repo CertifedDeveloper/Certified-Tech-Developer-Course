@@ -1,0 +1,1 @@
+SELECT title FROM movies_db.series;

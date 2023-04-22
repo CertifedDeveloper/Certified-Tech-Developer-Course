@@ -1,0 +1,2 @@
+SELECT * FROM emarket.facturas
+WHERE FacturaID BETWEEN 10000 AND 10500 OR ClienteID LIKE "B%";

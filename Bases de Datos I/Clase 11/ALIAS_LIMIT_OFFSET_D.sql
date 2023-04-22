@@ -1,0 +1,1 @@
+SELECT * FROM movies_db.episodes ORDER BY rating ASC LIMIT 3;

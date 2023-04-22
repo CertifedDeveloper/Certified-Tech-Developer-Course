@@ -1,0 +1,1 @@
+SELECT FacturaID, ProductoID, Cantidad FROM emarket.facturadetalle;

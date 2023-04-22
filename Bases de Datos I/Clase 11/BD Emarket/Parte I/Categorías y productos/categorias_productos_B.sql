@@ -1,0 +1,1 @@
+SELECT CategoriaNombre, Descripcion FROM emarket.categorias;

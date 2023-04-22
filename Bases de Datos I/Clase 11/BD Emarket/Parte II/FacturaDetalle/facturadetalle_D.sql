@@ -1,0 +1,1 @@
+SELECT FacturaID AS NroFactura, ProductoID AS Producto, PrecioUnitario * Cantidad AS Total FROM emarket.facturadetalle;
