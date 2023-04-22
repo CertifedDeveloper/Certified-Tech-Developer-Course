@@ -1,0 +1,17 @@
+{
+	"info": {
+		"_postman_id": "db04721f-bd49-4650-acb9-fc81992b7432",
+		"name": "Front End II",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
