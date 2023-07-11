@@ -1,0 +1,22 @@
+[2023-05-18 23:03:39] [ INFO  ] [Main:15] Empezamos el método Main
+[2023-05-18 23:03:40] [ ERROR ] [Main:30] Intento de registrar empleado con mismo ID
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'nombreA', 'apellidoA', 'profesionA', 'puestoA')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'nombreA', 'apellidoA', 'profesionA', 'puestoA')"; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'nombreC', 'apellidoC', 'profesionC', 'puestoC') [23505-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:174)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Main.main(Main.java:28)
+[2023-05-18 23:03:40] [ DEBUG ] [Main:42] Empleado actualizado por ID=2
+[2023-05-18 23:03:40] [ INFO  ] [Main:51] Empleado borrado con ID igual a 2
+[2023-05-18 23:03:40] [ INFO  ] [Main:59] Empleado borrado con nombreA

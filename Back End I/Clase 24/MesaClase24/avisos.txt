@@ -1,0 +1,14 @@
+[2023-06-01 12:28:46] [ INFO  ] [DireccionDAOH2:57] Guardando dirección en la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [PacienteDAOH2:91] Guardando paciente en la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [PacienteDAOH2:54] Leyendo de la base de datos el paciente con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [DireccionDAOH2:30] Leyendo de la base de datos el domicilio con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:27] Conectando a la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:80] Guardando odontologo en la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:53] Leyendo de la base de datos el odontologo con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:38] Conectando a la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [PacienteDAOH2:54] Leyendo de la base de datos el paciente con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [DireccionDAOH2:30] Leyendo de la base de datos el domicilio con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:53] Leyendo de la base de datos el odontologo con id: 1
+[2023-06-01 12:28:46] [ INFO  ] [OdontologoDAOH2:38] Conectando a la base de datos
+[2023-06-01 12:28:46] [ INFO  ] [TurnoDAOH2:24] Conectando a la base de datos
+[2023-06-01 12:28:47] [ INFO  ] [TurnoDAOH2:37] Guardando turno en la base de datos

@@ -1,0 +1,6 @@
+[2023-05-24 13:10:11] [ INFO  ] [PacienteDAOH2:46] Leyendo de la base de datos el paciente con id: 1
+[2023-05-24 13:10:12] [ INFO  ] [DireccionDAOH2:33] Leyendo de la base de datos el domicilio con id: 1
+[2023-05-24 13:10:12] [ INFO  ] [PacienteDAOH2:46] Leyendo de la base de datos el paciente con id: 3
+[2023-05-24 13:10:12] [ INFO  ] [PacienteDAOH2:154] Buscando todos los pacientes de la base de datos
+[2023-05-24 13:10:12] [ INFO  ] [DireccionDAOH2:33] Leyendo de la base de datos el domicilio con id: 1
+[2023-05-24 13:10:12] [ INFO  ] [DireccionDAOH2:33] Leyendo de la base de datos el domicilio con id: 2

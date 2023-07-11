@@ -1,0 +1,164 @@
+package DAO.Impl;
+
+import DAO.IDao;
+import Model.Direccion;
+import Model.Paciente;
+
+import java.security.UnresolvedPermission;
+import java.sql.*;
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class PacienteDAOH2 implements IDao<Paciente> {
+
+    private final static String DB_JDBC_DRIVER = "org.h2.Driver";
+    //con la instruccion INIT=RUNSCRIPT cuando se conecta a la base ejecuta el script de sql que esta en dicho archivo
+    //private final static String DB_URL = "jdbc:h2:~/DBPacientes;INIT=RUNSCRIPT FROM 'create.sql'";
+    private final static String DB_URL = "jdbc:h2:c:/ARCHIVOS/DBPacientes;INIT=RUNSCRIPT FROM 'resource/create.sql'";
+    private final static String DB_USER ="RICK";
+    private final static String DB_PASSWORD = "";
+
+    public static Connection con (){
+        Connection c = null;
+        try {
+            Class.forName(DB_JDBC_DRIVER );
+            c = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return c;
+    }
+
+    @Override
+    public Paciente leer(int id) {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        Paciente paciente = null;
+        Direccion domicilio = null;
+        DireccionDAOH2 d = new DireccionDAOH2();
+        try{
+            connection = con();
+            preparedStatement = connection.prepareStatement("SELECT * FROM PACIENTES WHERE id=?");
+            preparedStatement.setInt(1,id);
+            ResultSet rs = preparedStatement.executeQuery();
+            while(rs.next()){
+                int idPaciente = rs.getInt(1);
+                String nombrePaciente = rs.getString(2);
+                String apellidoPaciente = rs.getString(3);
+                String DNIPaciente = rs.getString(4);
+                LocalDate fechaIngresoPaciente = rs.getDate(5).toLocalDate();
+                domicilio = d.leer(rs.getInt(6));
+                paciente = new Paciente(idPaciente, nombrePaciente,apellidoPaciente,DNIPaciente, fechaIngresoPaciente, domicilio);
+            }
+            preparedStatement.close();
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return paciente;
+    }
+
+    @Override
+    public Paciente guardar(Paciente unPaciente) {
+
+        // guardo en la tabla Direcciones la direccion del Paciente
+        DireccionDAOH2 d = new DireccionDAOH2();
+        Direccion elDomi = d.guardar(unPaciente.getDomicilio());
+
+        // vuelvo a poner la direccion con el id de la tabla en el paciente
+        unPaciente.setDomicilio(elDomi);
+
+        Connection conection = con();
+        try {
+            PreparedStatement pst = conection.prepareStatement("INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHAINGRESO, ID_DOMICILIO) " +
+                    "VALUES (?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
+            pst.setString(1, unPaciente.getNombre());
+            pst.setString(2, unPaciente.getApellido());
+            pst.setString(3, unPaciente.getDni());
+            pst.setDate(4,java.sql.Date.valueOf(unPaciente.getFecha_ingreso()));
+            pst.setInt(5, unPaciente.getDomicilio().getId());
+            pst.executeUpdate();
+
+            ResultSet keys = pst.getGeneratedKeys();
+            while (keys.next()) {
+                unPaciente.setId(keys.getInt(1));
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        finally{
+            try {
+                conection.close();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        };
+        return unPaciente;
+    }
+
+    @Override
+    public void eliminar(int id) {
+        Connection connection = null;
+        PreparedStatement preparedStatementA = null;
+        PreparedStatement preparedStatementB = null;
+        Paciente paciente = null;
+        int domicilioId;
+        DireccionDAOH2 d = new DireccionDAOH2();
+        try{
+            connection = con();
+            preparedStatementB = connection.prepareStatement("SELECT * FROM PACIENTES WHERE id=?");
+            preparedStatementB.setInt(1,id);
+            ResultSet rs = preparedStatementB.executeQuery();
+            while(rs.next()){
+                domicilioId = rs.getInt(6);
+                d.eliminar(domicilioId);
+            }
+            preparedStatementA = connection.prepareStatement("DELETE FROM PACIENTES WHERE id=?");
+            preparedStatementA.setInt(1,id);
+            preparedStatementA.executeUpdate();
+            preparedStatementB.close();
+            preparedStatementA.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public ArrayList<Paciente> buscarTodos() {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        Paciente paciente = null;
+        Direccion domicilio = null;
+        ArrayList<Paciente> pacientes = new ArrayList<>();
+        DireccionDAOH2 d = new DireccionDAOH2();
+        try {
+            //1 Levantar el driver y Conectarnos
+            connection = con();
+
+            //2 Crear una sentencia
+            preparedStatement = connection.prepareStatement("SELECT * FROM PACIENTES;");
+
+            //3 Ejecutar una sentencia SQL
+            ResultSet rs = preparedStatement.executeQuery();
+
+
+            //4 Obtener resultados
+            while (rs.next()) {
+                int idPaciente = rs.getInt(1);
+                String nombrePaciente = rs.getString(2);
+                String apellidoPaciente = rs.getString(3);
+                String DNIPaciente = rs.getString(4);
+                LocalDate fechaIngresoPaciente = rs.getDate(5).toLocalDate();
+                domicilio = d.leer(rs.getInt(6));
+                paciente = new Paciente(idPaciente, nombrePaciente,apellidoPaciente,DNIPaciente, fechaIngresoPaciente, domicilio);
+                pacientes.add(paciente);
+            }
+            preparedStatement.close();
+        } catch (Exception throwables) {
+            throwables.printStackTrace();
+        }
+
+        return pacientes;
+    }
+}

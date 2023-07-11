@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS MEDICAMENTOS; CREATE TABLE MEdICAMENTOS (id int auto_increment primary key, nombre varchar(255),laboratorio varchar (255),cantidad int,precio double);

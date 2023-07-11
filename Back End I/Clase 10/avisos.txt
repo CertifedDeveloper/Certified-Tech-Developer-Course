@@ -1,0 +1,9 @@
+[2023-05-18 09:39:54] [ INFO  ] [Main:12] Empezamos el método Main
+[2023-05-18 09:39:54] [ INFO  ] [Main:28] La longitud de la lista es mayor a 5
+[2023-05-18 09:39:54] [ INFO  ] [Main:31] La longitud de la lista es mayor a 10
+[2023-05-18 09:39:54] [ INFO  ] [Main:40] Calculando el promedio
+[2023-05-18 09:44:27] [ INFO  ] [Main:14] Empezamos el método Main
+[2023-05-18 09:44:27] [ INFO  ] [Main:21] La longitud de la lista es mayor a 5
+[2023-05-18 09:44:27] [ INFO  ] [Main:33] Calculando el promedio
+[2023-05-18 09:44:55] [ INFO  ] [Main:14] Empezamos el método Main
+[2023-05-18 09:44:55] [ ERROR ] [Main:30] La lista es igual a cero

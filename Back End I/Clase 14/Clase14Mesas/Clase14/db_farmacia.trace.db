@@ -1,0 +1,3 @@
+2023-05-22 17:33:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICAMENTOS" not found; SQL statement:
+SELECT id,nombre,laboratorio,cantidad,precio  FROM medicamentos where id = ? [42102-214]

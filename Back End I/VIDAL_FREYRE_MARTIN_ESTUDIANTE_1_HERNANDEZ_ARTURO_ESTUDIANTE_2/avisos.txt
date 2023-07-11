@@ -1,0 +1,10 @@
+[2023-05-24 23:23:43] [ INFO  ] [OdontologoDAOH2:23] Conectando a la base de datos
+[2023-05-24 23:23:43] [ INFO  ] [OdontologoDAOH2:36] Guardando odontologo en la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:23] Conectando a la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:36] Guardando odontologo en la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:23] Conectando a la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:36] Guardando odontologo en la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:73] Buscando todos los odontologos de la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:23] Conectando a la base de datos
+[2023-05-24 23:23:44] [ INFO  ] [OdontologoDAOH2:23] Conectando a la base de datos
+[2023-05-24 23:23:45] [ INFO  ] [OdontologoDAOH2:36] Guardando odontologo en la base de datos

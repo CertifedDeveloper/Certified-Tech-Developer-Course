@@ -1,0 +1,18 @@
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:138] Avión encontrado
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:138] Avión encontrado
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:25] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:138] Avión encontrado
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:43] Avión registrado en la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:176] Lista de aviones devuelta
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos
+[2023-05-20 19:50:26] [ INFO  ] [AvionDAOH2:83] Avión eliminado de la base de datos

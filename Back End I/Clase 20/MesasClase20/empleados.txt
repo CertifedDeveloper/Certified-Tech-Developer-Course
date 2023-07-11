@@ -1,0 +1,4 @@
+nombreA;apellidoA;legajoA;1000.0
+nombreB;apellidoB;legajoB;500.0
+nombreC;apellidoC;legajoC;2000.0
+nombreD;apellidoD;legajoD;1000.0
